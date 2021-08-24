@@ -1,0 +1,7 @@
+
+terraform.tfstate.backup
+terraform.tfstate
+mb.pem
+.terraform/plugins/selections.json
+.terraform/plugins/registry.terraform.io/hashicorp/tls/3.1.0/darwin_amd64/terraform-provider-tls_v3.1.0_x5
+.terraform/plugins/registry.terraform.io/hashicorp/aws/3.55.0/darwin_amd64/terraform-provider-aws_v3.55.0_x5
