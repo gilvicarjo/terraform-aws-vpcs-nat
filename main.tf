@@ -1,7 +1,7 @@
 provider "aws" {
-  region = "eu-west-3"
-  shared_credentials_file = "~/.aws/credentials"
-  profile = "mbio"
+  region = "Your AWS Zone"
+  shared_credentials_file = "~/.aws/credentials" #you can modify your credentials file path
+  profile = "Your Profile ID" #the same specified inside the file above
 }
 
 terraform {
@@ -144,7 +144,7 @@ resource "aws_security_group" "sg-env-b-windows" {
 
 resource "aws_instance" "webserver" {
   instance_type = "t2.micro"
-  ami = "ami-06602da18c878f98d" # https://cloud-images.ubuntu.com/locator/ec2/ (Ubuntu Server 20.04 LTS (HVM), SSD Volume Type)
+  ami = "ami-06602da18c878f98d" 
   subnet_id = aws_subnet.subnet-env-a.id
   associate_public_ip_address = true
   security_groups = [aws_security_group.sg-env-a.id]
@@ -166,7 +166,7 @@ output "webserver_private_ip" {
 
 resource "aws_instance" "linux" {
   instance_type = "t2.micro"
-  ami = "ami-06602da18c878f98d" # https://cloud-images.ubuntu.com/locator/ec2/ (Ubuntu Server 20.04 LTS (HVM), SSD Volume Type)
+  ami = "ami-06602da18c878f98d" 
   subnet_id = aws_subnet.subnet-env-b.id
   associate_public_ip_address = true
   security_groups = [aws_security_group.sg-env-b-linux.id]
@@ -188,7 +188,7 @@ output "linux_private_ip" {
 
 resource "aws_instance" "windows" {
   instance_type = "t2.micro"
-  ami = "ami-08f9f652fbc8a1ace" # Microsoft Windows Server 2016 Base
+  ami = "ami-08f9f652fbc8a1ace"
   subnet_id = aws_subnet.subnet-env-b2.id
   associate_public_ip_address = true
   security_groups = [aws_security_group.sg-env-b-windows.id]
