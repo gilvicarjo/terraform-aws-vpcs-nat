@@ -2,7 +2,7 @@
 
 ## 1. Clone project locally
 ```markdown
-git clone https://github.com/gilvicarjo/terraform-aws-vpcs-nat.git <br>
+git clone https://github.com/gilvicarjo/terraform-aws-vpcs-nat.git
 ```
 ## 2. Install Terraform
 > https://learn.hashicorp.com/tutorials/terraform/install-cli <br>
