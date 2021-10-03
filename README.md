@@ -29,8 +29,6 @@ The Second VPC has an Windows Server OS that can access the webpage available in
 
 For further details, you can check the diagram above, the main.tf and even the USAGE.md files.
 
-<br>
-
 ## Diagram
 
 ![](images/platform-tf.png)
