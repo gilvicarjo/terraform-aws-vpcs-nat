@@ -1,6 +1,6 @@
 provider "aws" {
   region = "Your AWS Zone"
-  shared_credentials_file = "~/.aws/credentials" #you can modify your credentials file path
+  #shared_credentials_file = "~/.aws/credentials" #you can modify your credentials file path
   profile = "Your Profile ID" #the same specified inside the file above
 }
 

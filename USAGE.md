@@ -9,10 +9,15 @@ git clone https://github.com/gilvicarjo/terraform-aws-vpcs-nat.git
 
 - That repo was created with Terraform v0.13.7
 
-## 3. Create the file below to store you AWS Credentials
-> "~/.aws/credentials" <br>
+## 3. Install AWS CLI in your OS
 
-- You can modify the way you would like your credentials file path 
+```markdown
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt-get install unzip -y
+unzip awscliv2.zip
+sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+aws --version
+```
 
 ## 4. The file must follow that structure below
 > [Your Profile ID] <br> 
