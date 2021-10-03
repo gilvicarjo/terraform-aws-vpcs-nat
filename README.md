@@ -31,7 +31,6 @@ For further details, you can check the diagram above, the main.tf and even the U
 
 <br>
 
-
 ## Diagram
 
 ![](images/platform-tf.png)
