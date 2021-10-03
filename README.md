@@ -24,8 +24,9 @@ Well, both VPCs are being connected by an VPC Peering.
 
 The Second VPC has an Windows Server OS that can access the webpage available in the First VPC. Inside this instance, some packages as Python, Boto, AWS cli and Terraform, are being installed, just in case. 
 
-"It's Better To Have It And Not Need It, Than To Need It And Not Have It!" - Woodrow F. Call
+<div align="center">"It's Better To Have It And Not Need It, Than To Need It And Not Have It!" <br> Woodrow F. Call </div>
+<br>
 
 For further details, you can check in the diagram above, at the file main.tf and at the file USAGE.md
 
-## Diagram 
+## Diagram
