@@ -1,8 +1,9 @@
 # Using the repo
 
 ## 1. Clone project locally
-> https://github.com/gilvicarjo/terraform-aws-vpcs-nat.git <br>
-
+```markdown
+git clone https://github.com/gilvicarjo/terraform-aws-vpcs-nat.git <br>
+```
 ## 2. Install Terraform
 > https://learn.hashicorp.com/tutorials/terraform/install-cli <br>
 
