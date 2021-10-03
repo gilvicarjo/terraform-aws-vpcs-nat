@@ -1,31 +1,31 @@
-# Using the repo
+# Terraform to build a Sample AWS Environment
 
-## 1. Clone project locally
-```markdown
-git clone https://github.com/gilvicarjo/terraform-aws-vpcs-nat.git
-```
-## 2. Install Terraform
-> https://learn.hashicorp.com/tutorials/terraform/install-cli <br>
+## The Environment
 
-- That repo was created with Terraform v0.13.7
+All the environment can be destroyed and recreated from scratch if needed.
 
-## 3. Create the file below to store you AWS Credentials
-> "~/.aws/credentials" <br>
+This repo provisions an internal web site for the company to announce news to theis employees could help with that.
 
-- You can modify the way you would like your credentials file path 
+Then, as the diagram below 2 VPCs are provisioned.
 
-## 4. The file must follow that structure below
-> [Your Profile ID] <br> 
-> aws_access_key_id = 'Your Access Key ID' <br>
-> aws_secret_access_key = 'Your Secret Access Key'
+> **First VPC**
 
-## 5. Now it's time to play
+The first VPC has a Apache Webserver solution that guarantees service availability running in a Linux Server OS.
 
-- From the repo path, inicialize terraform:
-> terraform init
+At the end of the *terraform apply* command you will receive a pem key to connect into this server _from the server at the Second VPC_. 
 
-- After that, to build the environment, just apply and wait the magic happens
-> terraform apply
+In this version, we just enable one webpage with the **idolized** 'hello world' as you see at the file *install_apache.sh*
 
-- Finally, to erase the environment, just
-> terraform destroy
+Still regarding the Apache Webserver (could be easily an NGINX, ok!!), it is available only internally in the company on a DNS endpoint. Check it out, in *main.tf* the Terraform resources: aws_route53_zone and aws_route53_record.
+
+Well, both VPCs are being connected by an VPC Peering. 
+
+> **Second VPC**
+
+The Second VPC has an Windows Server OS that can access the webpage available in the First VPC. Inside this instance, some packages as Python, Boto, AWS cli and Terraform, are being installed, just in case. 
+
+"It's Better To Have It And Not Need It, Than To Need It And Not Have It!" - Woodrow F. Call
+
+For further details, you can check in the diagram above, at the file main.tf and at the file USAGE.md
+
+## Diagram 

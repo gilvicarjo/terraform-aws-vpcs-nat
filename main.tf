@@ -308,7 +308,7 @@ resource "aws_vpc_peering_connection" "peering-env-a-env-b" {
 }
 
 resource "aws_route53_zone" "private" {
-  name = "mbio.xyz"
+  name = "platform.xyz"
 
   vpc {
     vpc_id = aws_vpc.vpc-env-a.id
@@ -322,7 +322,7 @@ resource "aws_route53_zone" "private" {
 
 resource "aws_route53_record" "hw" {
   zone_id = aws_route53_zone.private.id
-  name = "hw.mbio.xyz"
+  name = "hw.platform.xyz"
   type    = "A"
   ttl     = "300"
   records = [aws_instance.webserver.private_ip]
