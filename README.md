@@ -27,7 +27,7 @@ The Second VPC has an Windows Server OS that can access the webpage available in
 <div align="center">"It's Better To Have It And Not Need It, Than To Need It And Not Have It!" <br> Woodrow F. Call </div>
 <br>
 
-For further details, you can check the diagram above, the file main.tf and even the USAGE.md file.
+For further details, you can check the diagram above, the main.tf and even the USAGE.md files.
 
 <br>
 
