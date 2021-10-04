@@ -32,7 +32,7 @@ For further details, you can check the diagram above, the main.tf and even the U
 ## Diagram
 
 ![](images/platform-tf.png)
-(imagine this diagram with AWS Default objects! XD )
+<br> (imagine this diagram with AWS Default objects! XD )
 
 ## Improved in the Internal Version..
 
