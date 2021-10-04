@@ -16,7 +16,7 @@ At the end of the *terraform apply* command you will receive a pem key to connec
 
 In this version, we just enable one webpage with the **idolized** 'hello world' as you see at the file *install_apache.sh*
 
-Still regarding the Apache Webserver (could be easily an NGINX, ok!!), it is available only internally in the company on a DNS endpoint. Check it out, in *main.tf* the Terraform resources: aws_route53_zone and aws_route53_record.
+Still regarding the Apache Webserver (could be easily NGINX), it is available only internally in the company on a DNS endpoint. Check it out, in *main.tf* the Terraform resources: aws_route53_zone and aws_route53_record.
 
 Well, both VPCs are being connected by an VPC Peering. 
 
