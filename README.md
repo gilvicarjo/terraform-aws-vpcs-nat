@@ -39,4 +39,4 @@ For further details, you can check the diagram above, the main.tf and even the U
 - Diagram at AWS Default resources
 - Provider Inputs
 - Availability at Subnet Layer and AZ Layer in both VPCs
-- Variables structure
+- Env Variables structure
